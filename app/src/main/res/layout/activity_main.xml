@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    android:layout_margin="30dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8pt"
+        android:background="#00BCD4"
+        android:padding="10dp"
+
+        android:text=""
+        android:textAlignment="textEnd"
+        android:textColor="#1E1E1E"
+        android:textSize="60sp" />
+
+
+    <Button
+
+        android:id="@+id/one"
+        android:layout_width="@dimen/BottomSizeWidth"
+        android:layout_height="@dimen/BottomSizeHeight"
+        android:layout_below="@id/output"
+        android:layout_marginRight="8dp"
+        android:onClick="onTestClick"
+        android:text="1" />
+
+        <Button
+            android:id="@+id/two"
+            android:layout_toEndOf="@id/one"
+            android:layout_below="@id/output"
+            android:layout_marginRight="8dp"
+            android:layout_width="@dimen/BottomSizeWidth"
+            android:layout_height="@dimen/BottomSizeHeight"
+            android:onClick="onTestClick"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/three"
+            android:layout_toEndOf="@id/two"
+            android:layout_below="@id/output"
+            android:layout_marginRight="8dp"
+            android:layout_width="@dimen/BottomSizeWidth"
+            android:layout_height="@dimen/BottomSizeHeight"
+            android:onClick="onTestClick"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/four"
+            android:layout_below="@id/one"
+            android:layout_marginRight="8dp"
+            android:layout_width="@dimen/BottomSizeWidth"
+            android:layout_height="@dimen/BottomSizeHeight"
+            android:onClick="onTestClick"
+            android:text="4" />
+
+
+
+
+
+        <Button
+            android:id="@+id/five"
+            android:layout_below="@id/two"
+            android:layout_toEndOf="@id/four"
+            android:layout_marginRight="8dp"
+            android:layout_width="@dimen/BottomSizeWidth"
+            android:layout_height="@dimen/BottomSizeHeight"
+            android:onClick="onTestClick"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/six"
+            android:layout_below="@id/two"
+            android:layout_toEndOf="@id/five"
+            android:layout_marginRight="8dp"
+            android:layout_width="@dimen/BottomSizeWidth"
+            android:layout_height="@dimen/BottomSizeHeight"
+            android:onClick="onTestClick"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/seven"
+            android:layout_below="@id/four"
+            android:layout_marginRight="8dp"
+            android:layout_width="@dimen/BottomSizeWidth"
+            android:layout_height="@dimen/BottomSizeHeight"
+            android:onClick="onTestClick"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/eight"
+            android:layout_below="@id/five"
+            android:layout_toEndOf="@id/seven"
+            android:layout_marginRight="8dp"
+            android:layout_width="@dimen/BottomSizeWidth"
+            android:layout_height="@dimen/BottomSizeHeight"
+            android:onClick="onTestClick"
+            android:text="8" />
+
+
+
+
+
+
+        <Button
+            android:id="@+id/nine"
+            android:layout_below="@id/six"
+            android:layout_toEndOf="@id/eight"
+            android:layout_marginRight="8dp"
+            android:layout_width="@dimen/BottomSizeWidth"
+            android:layout_height="@dimen/BottomSizeHeight"
+            android:onClick="onTestClick"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/zero"
+            android:layout_below="@id/eight"
+            android:layout_toEndOf="@id/seven"
+            android:layout_marginRight="8dp"
+            android:layout_width="@dimen/BottomSizeWidth"
+            android:layout_height="@dimen/BottomSizeHeight"
+            android:onClick="onTestClick"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_toEndOf="@id/three"
+            android:layout_below="@id/output"
+            android:layout_marginRight="8dp"
+            android:layout_width="@dimen/BottomSizeWidth"
+            android:layout_height="@dimen/BottomSizeHeight"
+            android:onClick="operation"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/qe"
+            android:layout_below="@id/divide"
+            android:layout_alignEnd="@id/divide"
+            android:layout_width="350dp"
+            android:layout_height="@dimen/BottomSizeHeight"
+            android:onClick="ClickQe"
+            android:text="=" />
+
+
+
+
+        <Button
+            android:id="@+id/multiply"
+            android:layout_below="@id/minus"
+            android:layout_toEndOf="@id/nine"
+
+            android:layout_marginRight="8dp"
+            android:layout_width="@dimen/BottomSizeWidth"
+            android:layout_height="@dimen/BottomSizeHeight"
+            android:onClick="operation"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/divide"
+            android:layout_toEndOf="@id/six"
+            android:layout_below="@id/multiply"
+            android:layout_marginRight="8dp"
+            android:layout_width="@dimen/BottomSizeWidth"
+            android:layout_height="@dimen/BottomSizeHeight"
+            android:onClick="operation"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_toEndOf="@id/six"
+            android:layout_below="@id/plus"
+            android:layout_marginRight="8dp"
+            android:layout_width="@dimen/BottomSizeWidth"
+            android:layout_height="@dimen/BottomSizeHeight"
+            android:onClick="operation"
+            android:text="-" />
+
+
+
+
+
+</RelativeLayout>
+
